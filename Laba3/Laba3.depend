@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1652937666 source:c:\users\sunatullo\desktop\laba3\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1652937666 source:c:\users\sunatullo\desktop\laba3\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<fstream>
+	"myfuncs.h"
+	<ctime>
+
+1652924928 c:\users\sunatullo\desktop\laba3\myfuncs.h
+
+1652937666 source:d:\study\programing\final\laba3\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<fstream>
+	"myfuncs.h"
+	<ctime>
+
+1652924928 d:\study\programing\final\laba3\myfuncs.h
+
+1652937666 source:d:\study\programing\final\laba3\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1685008224 source:e:\study\programing\final\laba3\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<fstream>
+	"myfuncs.h"
+	<ctime>
+
+1685008204 e:\study\programing\final\laba3\myfuncs.h
+
+1685008159 source:e:\study\programing\final\laba3\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
