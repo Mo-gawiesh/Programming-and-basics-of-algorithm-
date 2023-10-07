@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1696704508 source:c:\users\moe-gawish\desktop\lab 4\main.cpp
+	<iostream>
+	<fstream>
+	"myfuncs.h"
+
+1696704567 c:\users\moe-gawish\desktop\lab 4\myfuncs.h
+
+1696704711 source:c:\users\moe-gawish\desktop\lab 4\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1696704508 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba4\main.cpp
+	<iostream>
+	<fstream>
+	"myfuncs.h"
+
+1696704567 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba4\myfuncs.h
+
+1696704711 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba4\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+

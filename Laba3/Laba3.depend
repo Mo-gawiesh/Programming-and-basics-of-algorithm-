@@ -44,3 +44,18 @@
 	<string>
 	<limits>
 
+1685008224 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba3\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<fstream>
+	"myfuncs.h"
+	<ctime>
+
+1685008204 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba3\myfuncs.h
+
+1685008159 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba3\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+

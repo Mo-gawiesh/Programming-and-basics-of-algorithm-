@@ -79,3 +79,17 @@
 	<limits>
 	<sstream>
 
+1684737458 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1671054660 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\myfuncs.h
+
+1684737439 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+	<sstream>
+
