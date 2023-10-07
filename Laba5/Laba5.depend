@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1652933365 source:c:\users\sunatullo\desktop\laba5\myfuncs.cpp
+	<iostream>
+	<cmath>
+
+1652933732 source:c:\users\sunatullo\desktop\laba5\main.cpp
+	<iostream>
+	<bitset>
+	"myfuncs.h"
+
+1652933346 c:\users\sunatullo\desktop\laba5\myfuncs.h
+
+1652933732 source:e:\study\programing\final\laba5\main.cpp
+	<iostream>
+	<bitset>
+	"myfuncs.h"
+
+1652933346 e:\study\programing\final\laba5\myfuncs.h
+
+1652933365 source:e:\study\programing\final\laba5\myfuncs.cpp
+	<iostream>
+	<cmath>
+

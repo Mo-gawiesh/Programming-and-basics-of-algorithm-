@@ -1,0 +1,12 @@
+Robert Haynes;Attorney;Accra
+Sean King;Agronomist;Accra
+Jeremy Mathis;Actor;Algiers
+Albert Mason;Architect;Athens
+Wayne Wilson;Mechanic;Baikonur
+Jason Clark;Accountant;Berlin
+Patrick Gordon;Librarian;Brazilia
+Andrew Bates;Banker;Brussels
+Greg Thompson;Veterinarian;Bueno Aires
+Steven Harvey;Decorator;Cairo
+Sherlock Holmes;Detective;London
+Mohamed;designer;egypt

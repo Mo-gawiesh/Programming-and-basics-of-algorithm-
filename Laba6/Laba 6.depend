@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1655067085 source:c:\users\dusto\Рабочий стол\laba 6\main.cpp
+	"myfuncs.h"
+	<windows.h>
+
+1655067131 c:\users\dusto\Рабочий стол\laba 6\myfuncs.h
+	<iostream>
+	<limits>
+	<fstream>
+
