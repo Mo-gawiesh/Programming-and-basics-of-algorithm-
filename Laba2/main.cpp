@@ -38,7 +38,7 @@ int main()
         cout<<"Result:\n"<<s;
     }
     s=0;
-    if(j==1){cout<<endl<<"Continue(0-no; 1-yes)?";j=one_or_zero();}
+    if(j==1){cout<<endl<<"Continue(0-no; 1-yes)?";j= natural();}
     }
     return 0;
 }
