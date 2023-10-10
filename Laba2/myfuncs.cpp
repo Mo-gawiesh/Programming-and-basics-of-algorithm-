@@ -6,7 +6,7 @@ int one_or_zero() {
     string m;
     getline(cin, m);
     while (m.length() != 1 || (stoi(m) != 0 && stoi(m) != 1)) {
-        cout << "!!ops!!\nmaybe you entered an incorrect value\nInput 1 or 0" << endl;
+        cout << "\nInput 1 or 0" << endl;
         getline(cin, m);
     }
     int a = stoi(m);
