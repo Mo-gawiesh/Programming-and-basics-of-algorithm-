@@ -9,19 +9,19 @@ int main() {
     int l{0};
     bool repeat{true};
 
-while (repeat) {
-    std::cout << "Where to get the input data from? (file-1, console-0):\n";
-    k = oneOrZero();
+    while (repeat) {
+        std::cout << "Where to get the input data from? (file-1, console-0):\n";
+        k = oneOrZero();
 
-    std::cout << "Where to output the result? (file-1, console-0):\n";
-    l = oneOrZero();
+        std::cout << "Where to output the result? (file-1, console-0):\n";
+        l = oneOrZero();
 
-    if (k == 0) {
-        n = getNatural("Input n: ");;
+        if (k == 0) {
+            n = getNatural("Input n: "); // Get a valid positive integer
             double* a = new double[n];
 
             for (int i = 0; i < n; i++) {
-                a[i] = getRealNumber("Input a" + std::to_string(i + 1) + ": ");
+                a[i] = getRealNumber("Input a" + std::to_string(i + 1) + ": "); // Get a valid real number
             }
 
             double* b = func(a, n);
@@ -46,7 +46,6 @@ while (repeat) {
             delete[] b;
         } else if (k == 1) {
             std::ifstream file(INPUT_FILE_PATH);
-            int n;
             file >> n;
             double* a = new double[n];
 
@@ -74,8 +73,6 @@ while (repeat) {
 
             delete[] a;
             delete[] b;
-
-            return 0; // Terminate the program when input data is read from a file.
         }
 
         std::cout << "Continue (0-no; 1-yes)? ";

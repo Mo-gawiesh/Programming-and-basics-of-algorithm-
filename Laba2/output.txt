@@ -1,4 +1,4 @@
 Input data:
-n=235
+n=4
 Result:
-1.34211
+2.08333

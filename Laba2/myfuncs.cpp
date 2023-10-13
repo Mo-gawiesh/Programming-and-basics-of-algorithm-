@@ -8,7 +8,8 @@ int one_or_zero() {
     std::string m;
     getline(std::cin, m);
     while (m.length() != 1 || (stoi(m) != 0 && stoi(m) != 1)) {
-        std::cout << "Input 1 or 0" << std::endl;
+        std::cout << "!!ops!!\nInput 1 or 0" << std::endl;
+        std::cin.clear();
         getline(std::cin, m);
     }
     int a = stoi(m);
