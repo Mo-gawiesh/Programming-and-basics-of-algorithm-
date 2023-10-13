@@ -1,5 +1,7 @@
 #pragma once
-double* func(double* a, int n);
-int one_or_zero();
-int natural();
-double realnum();
+#include <vector>
+#include <string>
+std::vector<double> func(const std::vector<double>& a);
+int oneOrZero();
+int getNatural(const std::string& prompt);
+double getRealNumber(const std::string& prompt);

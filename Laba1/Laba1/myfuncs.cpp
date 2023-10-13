@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include <limits>
+#include "myfuncs.h"
 #include <sstream>
-using namespace std;
 
 double* func(double* a, int n) {
     double* b = new double[n];
@@ -14,45 +14,56 @@ double* func(double* a, int n) {
     return b;
 }
 
-int one_or_zero() {
+int oneOrZero() {
     int a;
-    string m;
-    getline(cin, m);
+    std::string m;
+    getline(std::cin, m);
     while (m.length() != 1 || (m[0] != '0' && m[0] != '1')) {
-        cout << "!!ops!!\nInput 1 or 0" << endl;
-        cin.clear();
-        getline(cin, m);
+        std::cout << "!!ops!!\nInput 1 or 0" << std::endl;
+        std::cin.clear();
+        getline(std::cin, m);
     }
     a = m[0] - '0';
     return a;
 }
 
-int natural() {
+int getNatural(const std::string& prompt) {
     int n;
-    string m;
+    std::string m;
     while (true) {
-        getline(cin, m);
-        stringstream ss(m);
+        std::cout << prompt;
+        getline(std::cin, m);
+        std::stringstream ss(m);
         if (ss >> n && ss.eof() && n > 0) {
             break;
         } else {
-            cout << "Error, try again with a positive integer:\n";
+            std::cout << "Error, try again with a positive integer:\n";
         }
     }
     return n;
 }
 
-double realnum() {
+double getRealNumber(const std::string& prompt) {
     double n;
-    string m;
+    std::string m;
     while (true) {
-        getline(cin, m);
-        stringstream ss(m);
+        std::cout << prompt;
+        getline(std::cin, m);
+        std::stringstream ss(m);
         if (ss >> n && ss.eof()) {
             break;
         } else {
-            cout << "Error, try again with a valid real number:\n";
+            std::cout << "Error, try again with a valid real number:\n";
         }
     }
     return n;
+}
+std::vector<double> func(const std::vector<double>& a) {
+    std::vector<double> b(a.size());
+    b[0] = a[0];
+    b[a.size() - 1] = a[a.size() - 1];
+    for (size_t i = 1; i < a.size() - 1; i++) {
+        b[i] = ((a[i + 1] - a[i]) / 3);
+    }
+    return b;
 }

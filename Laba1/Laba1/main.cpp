@@ -1,62 +1,79 @@
 #include <iostream>
-#include <string>
 #include <fstream>
 #include "myfuncs.h"
-using namespace std;
+#include "constants.h"
 
-int main()
-{
-    int n;
-    int i{}, j{1}, k, l;
-    while (j == 1) {
-        cout << "Where to get the input data from? (file-1, console-0)" << endl;
-        k = one_or_zero();
-        cout << "Where to output the result? (file-1, console-0)" << endl;
-        l = one_or_zero();
+int main() {
+    int n{0};
+int k{0};
+int l{0};
+bool repeat{true};
+
+    while (repeat) {
+        std::cout << "Where to get the input data from? (file-1, console-0):\n";
+        k = oneOrZero();
+
+        std::cout << "Where to output the result? (file-1, console-0):\n";
+        l = oneOrZero();
+
         if (k == 0) {
-            cout << "Input n: ";
-            n = natural();
-        } else if (k == 1) {
-            j = 0;
-            ifstream file;
-            file.open("input.txt");
-            file >> n;
-        }
-        double a[n];
-        double b[n];
-        if (k == 0) {
-            for (i = 0; i < n; i++) {
-                cout << "Input a" << i + 1 << ": ";
-                a[i] = realnum();
+            int n = getNatural("Input n: ");
+            std::vector<double> a(n);
+
+            for (int i = 0; i < n; i++) {
+                a[i] = getRealNumber("Input a" + std::to_string(i + 1) + ": ");
+            }
+
+            std::vector<double> b = func(a);
+
+            if (l == 1) {
+                std::ofstream file(OUTPUT_FILE_PATH);
+                file << "Input data:\n";
+                file << "n=" << n << std::endl;
+                for (int i = 0; i < n; i++) file << "a" << i + 1 << "=" << a[i] << std::endl;
+                file << "Result:\n";
+                for (int i = 0; i < n; i++) file << "b" << i + 1 << "=" << b[i] << std::endl;
+                file.close();
+            } else if (l == 0) {
+                std::cout << "Input data:\n";
+                std::cout << "n=" << n << std::endl;
+                for (int i = 0; i < n; i++) std::cout << "a" << i + 1 << "=" << a[i] << std::endl;
+                std::cout << "Result:\n";
+                for (int i = 0; i < n; i++) std::cout << "b" << i + 1 << "=" << b[i] << std::endl;
             }
         } else if (k == 1) {
-            ifstream file;
-            file.open("input.txt");
+            std::ifstream file(INPUT_FILE_PATH);
+            int n;
             file >> n;
-            for (int i = 0; i < n; i++) file >> a[i];
+            std::vector<double> a(n);
+
+            for (int i = 0; i < n; i++) {
+                file >> a[i];
+            }
+
+            std::vector<double> b = func(a);
+
+            if (l == 1) {
+                std::ofstream outFile(OUTPUT_FILE_PATH);
+                outFile << "Input data:\n";
+                outFile << "n=" << n << std::endl;
+                for (int i = 0; i < n; i++) outFile << "a" << i + 1 << "=" << a[i] << std::endl;
+                outFile << "Result:\n";
+                for (int i = 0; i < n; i++) outFile << "b" << i + 1 << "=" << b[i] << std::endl;
+                outFile.close();
+            } else if (l == 0) {
+                std::cout << "Input data:\n";
+                std::cout << "n=" << n << std::endl;
+                for (int i = 0; i < n; i++) std::cout << "a" << i + 1 << "=" << a[i] << std::endl;
+                std::cout << "Result:\n";
+                for (int i = 0; i < n; i++) std::cout << "b" << i + 1 << "=" << b[i] << std::endl;
+            }
+            return 0; // Terminate the program when input data is read from a file.
         }
-        b[0] = a[0];
-        b[n - 1] = a[n - 1];
-        for (int i = 1; i < n - 1; i++) b[i] = ((a[i + 1] - a[i]) / 3);
-        if (l == 1) {
-            ofstream file;
-            file.open("output.txt");
-            file << "Input data:\n";
-            file << "n=" << n << endl;
-            for (i = 0; i < n; i++) file << "a" << i + 1 << "=" << a[i] << endl;
-            file << "Result:\n";
-            for (i = 0; i < n; i++) file << "b" << i + 1 << "=" << b[i] << endl;
-        } else if (l == 0) {
-            cout << "Input data:\n";
-            cout << "n=" << n << endl;
-            for (i = 0; i < n; i++) cout << "a" << i + 1 << "=" << a[i] << endl;
-            cout << "Result:\n";
-            for (i = 0; i < n; i++) cout << "b" << i + 1 << "=" << b[i] << endl;
-        }
-        if (j == 1) {
-            cout << endl << "Continue (0-no; 1-yes)?";
-            j = one_or_zero();
-        }
+
+        std::cout << "Continue (0-no; 1-yes)? ";
+        repeat = oneOrZero();
     }
+
     return 0;
 }
