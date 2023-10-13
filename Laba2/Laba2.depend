@@ -36,9 +36,12 @@
 
 1697161940 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.h
 
-1697160958 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.cpp
+1697162279 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.cpp
 	<iostream>
 	<limits>
+	<cmath>
+	"myfuncs.h"
+	<sstream>
 
 1697161051 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\constants.h
 

@@ -18,7 +18,7 @@ int one_or_zero() {
 int natural() {
     int n;
     while (!(std::cin >> n) || n <= 0 || std::cin.peek() != '\n') {
-        std::cout << "Error, try again:\n";
+        std::cout << "Error, try again with a positive integer:\n";
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
