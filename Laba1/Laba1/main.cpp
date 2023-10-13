@@ -7,17 +7,17 @@ int main() {
     int n{0};
     int k{0};
     int l{0};
-    bool repeat{true};;
+    bool repeat{true};
 
-    while (repeat) {
-        std::cout << "Where to get the input data from? (file-1, console-0):\n";
-        k = oneOrZero();
+while (repeat) {
+    std::cout << "Where to get the input data from? (file-1, console-0):\n";
+    k = oneOrZero();
 
-        std::cout << "Where to output the result? (file-1, console-0):\n";
-        l = oneOrZero();
+    std::cout << "Where to output the result? (file-1, console-0):\n";
+    l = oneOrZero();
 
-        if (k == 0) {
-            int n = getNatural("Input n: ");
+    if (k == 0) {
+        n = getNatural("Input n: ");;
             double* a = new double[n];
 
             for (int i = 0; i < n; i++) {
