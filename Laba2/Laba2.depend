@@ -26,16 +26,19 @@
 	<iostream>
 	<limits>
 
-1696973065 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\main.cpp
+1697162000 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\main.cpp
 	<iostream>
 	<string>
 	<fstream>
 	"myfuncs.h"
+	"constants.h"
 	<cmath>
 
-1685006238 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.h
+1697161940 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.h
 
-1696972618 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.cpp
+1697160958 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\myfuncs.cpp
 	<iostream>
 	<limits>
+
+1697161051 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba2\constants.h
 
