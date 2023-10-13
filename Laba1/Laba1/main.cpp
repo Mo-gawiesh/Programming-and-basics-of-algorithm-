@@ -5,9 +5,9 @@
 
 int main() {
     int n{0};
-int k{0};
-int l{0};
-bool repeat{true};
+    int k{0};
+    int l{0};
+    bool repeat{true};;
 
     while (repeat) {
         std::cout << "Where to get the input data from? (file-1, console-0):\n";
@@ -18,13 +18,13 @@ bool repeat{true};
 
         if (k == 0) {
             int n = getNatural("Input n: ");
-            std::vector<double> a(n);
+            double* a = new double[n];
 
             for (int i = 0; i < n; i++) {
                 a[i] = getRealNumber("Input a" + std::to_string(i + 1) + ": ");
             }
 
-            std::vector<double> b = func(a);
+            double* b = func(a, n);
 
             if (l == 1) {
                 std::ofstream file(OUTPUT_FILE_PATH);
@@ -41,17 +41,20 @@ bool repeat{true};
                 std::cout << "Result:\n";
                 for (int i = 0; i < n; i++) std::cout << "b" << i + 1 << "=" << b[i] << std::endl;
             }
+
+            delete[] a;
+            delete[] b;
         } else if (k == 1) {
             std::ifstream file(INPUT_FILE_PATH);
             int n;
             file >> n;
-            std::vector<double> a(n);
+            double* a = new double[n];
 
             for (int i = 0; i < n; i++) {
                 file >> a[i];
             }
 
-            std::vector<double> b = func(a);
+            double* b = func(a, n);
 
             if (l == 1) {
                 std::ofstream outFile(OUTPUT_FILE_PATH);
@@ -68,6 +71,10 @@ bool repeat{true};
                 std::cout << "Result:\n";
                 for (int i = 0; i < n; i++) std::cout << "b" << i + 1 << "=" << b[i] << std::endl;
             }
+
+            delete[] a;
+            delete[] b;
+
             return 0; // Terminate the program when input data is read from a file.
         }
 

@@ -1,0 +1,99 @@
+# depslib dependency file v1.0
+1652936922 source:c:\users\sunatullo\desktop\lab1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1652908743 c:\users\sunatullo\desktop\lab1\myfuncs.h
+
+1652936895 source:c:\users\sunatullo\desktop\lab1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1671054829 source:c:\users\sunatullo\desktop\laba1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1671054660 c:\users\sunatullo\desktop\laba1\myfuncs.h
+
+1671054829 source:c:\users\sunatullo\desktop\laba1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1653133602 source:d:\study\programing\final\laba1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1652908743 d:\study\programing\final\laba1\myfuncs.h
+
+1652936895 source:d:\study\programing\final\laba1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1653133602 source:e:\study\programing\final\laba1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1652908743 e:\study\programing\final\laba1\myfuncs.h
+
+1652936895 source:e:\study\programing\final\laba1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+
+1684737439 source:e:\study\programing\final\lab1 after edit\laba1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+	<sstream>
+
+1684737458 source:e:\study\programing\final\lab1 after edit\laba1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1671054660 e:\study\programing\final\lab1 after edit\laba1\myfuncs.h
+
+1684741058 source:h:\study\programing\final\lab1 after edit\laba1\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"myfuncs.h"
+
+1671058260 h:\study\programing\final\lab1 after edit\laba1\myfuncs.h
+
+1684741039 source:h:\study\programing\final\lab1 after edit\laba1\myfuncs.cpp
+	<iostream>
+	<string>
+	<limits>
+	<sstream>
+
+1697159357 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\main.cpp
+	<iostream>
+	<fstream>
+	"myfuncs.h"
+	"constants.h"
+
+1697159563 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\myfuncs.h
+	<string>
+
+1697159563 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\myfuncs.cpp
+	"myfuncs.h"
+	<iostream>
+	<string>
+	<limits>
+	<sstream>
+
+1697159357 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\constants.h
+

@@ -1,7 +1,7 @@
+#include "myfuncs.h"
 #include <iostream>
 #include <string>
 #include <limits>
-#include "myfuncs.h"
 #include <sstream>
 
 double* func(double* a, int n) {
@@ -57,13 +57,4 @@ double getRealNumber(const std::string& prompt) {
         }
     }
     return n;
-}
-std::vector<double> func(const std::vector<double>& a) {
-    std::vector<double> b(a.size());
-    b[0] = a[0];
-    b[a.size() - 1] = a[a.size() - 1];
-    for (size_t i = 1; i < a.size() - 1; i++) {
-        b[i] = ((a[i + 1] - a[i]) / 3);
-    }
-    return b;
 }
