@@ -79,11 +79,13 @@
 	<limits>
 	<sstream>
 
-1697167408 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\main.cpp
+1697874443 source:c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\main.cpp
 	<iostream>
 	<fstream>
+	<memory>
 	"myfuncs.h"
 	"constants.h"
+	<cstdlib>
 
 1697159563 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\myfuncs.h
 	<string>
@@ -95,5 +97,5 @@
 	<limits>
 	<sstream>
 
-1697163567 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\constants.h
+1697865689 c:\users\moe-gawish\documents\programming and basics of algorithm\programming-and-basics-of-algorithm-\laba1\laba1\constants.h
 
